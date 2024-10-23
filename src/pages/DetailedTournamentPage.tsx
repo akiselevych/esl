@@ -14,7 +14,7 @@ const DetailedTournamentPage = () => {
         (item: any) => item.game == params.game
     );
 
-    const game: any = test[0];
+    const game: any = test[params.id ? parseInt(params.id) - 1 : 0 ];
     // const [game, setGame] = useState<any>({});
 
     // // request (note for searching)

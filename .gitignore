@@ -1,6 +1,6 @@
 # Node.js
 frontend/node_modules/
-
+.env
 # Build files
 /dist/
 /.nuxt/

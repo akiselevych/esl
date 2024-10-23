@@ -5,6 +5,7 @@ import "../../styles/components/ProfilePage/ProfileHeader.scss";
 import { Auth } from "../../utils/auth";
 import ChangeAvatarButton from "../UI/ChangeAvatarButton";
 import SteamConnectButton from "../UI/SteamConnectButton";
+import avatar from '../../sources/avatar.png'
 
 const ProfileHeader = () => {
     const [searchParams] = useSearchParams();
@@ -38,7 +39,7 @@ const ProfileHeader = () => {
                     <img
                         className="profile-picture"
                         alt={nickname}
-                        src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkcvOnGNWgVN-3M4nPYWy_V688B9wwKB5THQ&s'}
+                        src={avatar}
                     />
 
                     <div className="profile-user-info">

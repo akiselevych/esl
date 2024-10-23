@@ -96,7 +96,7 @@ export const tournaments = [
         game_name: "CS 2",
         cover_image:
             "https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/social/cs2.jpg",
-        name: "ESL CS2 2v2 Tournament",
+        name: "ESL CS2 Tournament",
         date: "Upcoming",
         mode: "2v2 Single elimination",
         access: true,
@@ -266,7 +266,7 @@ export const tournaments = [
         game_name: "CS 2",
         cover_image:
             "https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/social/cs2.jpg",
-        name: "ESL CS2 2v2 Tournament",
+        name: "ESL CS2 Tournament",
         date: "Upcoming",
         mode: "2v2 Single elimination",
         access: true,
@@ -436,7 +436,7 @@ export const tournaments = [
         game_name: "CS 2",
         cover_image:
             "https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/social/cs2.jpg",
-        name: "ESL CS2",
+        name: "ESL CS2 Tournament",
         date: "Upcoming",
         mode: "5v5 competitive",
         access: true,
@@ -521,7 +521,7 @@ export const tournaments = [
         game_name: "CS 2",
         cover_image:
             "https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/social/cs2.jpg",
-        name: "ESL CS2",
+        name: "ESL CS2 Tournament",
         date: "Upcoming",
         mode: "5v5 competitive",
         access: true,
@@ -763,7 +763,7 @@ export const tops = [
         game_name: "CS 2",
         cover_image:
             "https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/social/cs2.jpg",
-        name: "ESL CS2 5v5 Competitive",
+        name: "ESL CS2 Tournament 5v5 Competitive",
         prizes: "Steam cards",
     },
     {

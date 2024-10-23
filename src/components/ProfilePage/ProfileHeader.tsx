@@ -10,7 +10,7 @@ import avatar from '../../sources/avatar.png'
 const ProfileHeader = () => {
     const [searchParams] = useSearchParams();
     const navigate = useNavigate();
-    const [avatar, setAvatar] = useState("");
+
     const [nickname, setNickname] = useState("");
 
     const checkIfLogged = async () => {
@@ -24,7 +24,6 @@ const ProfileHeader = () => {
 
         console.log(await response);
 
-        setAvatar(response.cover_image);
         setNickname(response.username);
     };
 

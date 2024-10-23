@@ -1,0 +1,145 @@
+.detailed-tournament-info-card-path {
+    position: absolute;
+    top: -300px;
+    bottom: 0;
+    right: 400px;
+}
+
+.detailed-tournament-info-card {
+    position: sticky;
+    top: 0px;
+    padding: 150px 0 50px 0;
+}
+
+.detailed-tournament-info-card-inner {
+    width: 352px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--white);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.detailed-tournament-game-info {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.detailed-tournament-card-button-wrapper {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detailed-tournament-card-button {
+    width: 100%;
+    height: 46px;
+    border-radius: 7px;
+    background: #C1CDE6;
+    color: var(--white);
+    border: none;
+    opacity: .5;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.detailed-tournament-card-button-link {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.detailed-tournament-info-card-category {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.detailed-tournament-info-card-category-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.detailed-tournament-info-card-category-game-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.detailed-tournament-info-card-category-game-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailed-tournament-info-card-category-status {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (min-width: 1400px) and (max-width: 1919px) {
+    .detailed-tournament-info-card-path {
+        right: 175px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .detailed-tournament-info-card-path {
+        right: 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .detailed-tournament-info-card-path {
+        position: relative;
+        top: unset;
+        right: unset;
+        bottom: unset;
+    }
+
+    .detailed-tournament-info-card {
+        position: relative;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .detailed-tournament-info-card-inner {
+        width: 90%;
+    }
+
+    .detailed-tournament-info-card-category {
+        height: auto;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .detailed-tournament-card-button-wrapper {
+        text-align: center;
+    }
+}

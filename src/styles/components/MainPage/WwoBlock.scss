@@ -1,0 +1,25 @@
+.wwo-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 60px;
+    border-bottom: 1px solid var(--black);
+    padding: 100px 0;
+    box-sizing: border-box;
+
+    & .fs-48.fw-600 {
+        text-align: center;
+    }
+}
+
+.wwo-offers {
+    width: 70%;
+    max-width: 1055px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}

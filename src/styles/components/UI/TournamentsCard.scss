@@ -1,0 +1,102 @@
+.hero-lower-part-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    height: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: .3s;
+
+    & .hero-lower-part-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s;
+    }
+
+    &.active {
+
+        & .hero-lower-part-content-background {
+            opacity: .5;
+        }
+
+        & .hero-lower-part-logo {
+            transform: translate(-50%, -80%);
+        }
+
+        & .tournament-link {
+            transform: translate(-50%, 80%);
+            opacity: 1;
+        }
+    }
+}
+
+.hero-lower-part-content-background {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: .3s;
+}
+
+.hero-lower-part-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.tournament-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--third-color);
+    stroke: var(--third-color);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+@media (min-width: 767px) and (max-width: 1315px) {
+    .hero-lower-part {
+        height: 100px;
+    }
+} 
+
+@media (max-width: 767px) {
+    .hero-lower-part-content {
+        width: 100%;
+        height: 155px;
+        flex-direction: column;
+
+        & .hero-lower-part-content-background {
+            opacity: .5;
+        }
+
+        & .hero-lower-part-logo {
+            transform: translate(-50%, -80%);
+        }
+
+        & .tournament-link {
+            width: 100%;
+            transform: translate(-50%, 80%);
+            opacity: 1;
+        }
+    }
+
+    .hero-lower-part-content {
+        background-color: #1D2239;
+    }
+}

@@ -1,0 +1,28 @@
+.policy-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 175px 0;
+    box-sizing: border-box;
+}
+
+.policy-wrapper {
+    max-width: var(--max-block-width);
+    display: flex;
+    flex-direction: column;
+
+    & li::marker {
+        color: var(--primary-color);
+    }
+}
+
+@media (max-width: 767px) {
+    .policy-wrapper {
+        width: 90%;
+    }
+
+    .policy-container {
+        padding: 50px 0;
+    }
+}

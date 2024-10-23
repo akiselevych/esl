@@ -1,0 +1,14 @@
+.prof-navbar-upper-part {
+    justify-content: flex-start !important;
+    border-bottom: 1px solid var(--black);
+}
+
+.prof-navbar-section {
+    gap: 5px;
+    cursor: pointer;
+    border-right: 1px solid var(--black);
+
+    &:last-of-type {
+        border-right: none;
+    }
+}

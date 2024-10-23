@@ -1,0 +1,125 @@
+.detailed-tournament-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.detailed-tournament-content-inner {
+    width: var(--max-block-width);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.detailed-tournament-content-wrapper {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detailed-tournament-settings-table-wrapper {
+    width: 100%;
+}
+
+.detailed-tournament-allowed-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detailed-tournament-allowed {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.detailed-tournament-allowed-thing {
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.detailed-tournament-allowed-thing-image {
+    width: 100%;
+    height: 76px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.detailed-tournament-description-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: var(--active-option);
+}
+
+.detailed-tournament-description {
+    width: var(--max-block-width);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detailed-tournament-participants-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.detailed-tournament-participants {
+    width: var(--max-block-width);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detailed-tournament-participant {
+    width: 65%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 3px rgba(1, 14, 40, 0.16);
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.detailed-tournament-participant-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1199px) {
+    .detailed-tournament-content-inner {
+        width: 100%;
+        align-items: center;
+    }
+
+    .detailed-tournament-content-wrapper,
+    .detailed-tournament-description,
+    .detailed-tournament-participants,
+    .detailed-tournament-participant {
+        width: 90%;
+    }
+}

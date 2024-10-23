@@ -1,0 +1,198 @@
+.c-event-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    box-sizing: border-box;
+    gap: 100px;
+}
+
+.c-event-past-matches {
+    width: var(--max-block-width);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.c-event-past-match {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    & .fs-16 {
+        margin-bottom: 20px;
+    }
+}
+
+.c-event-past-game {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.c-event-past-game-category {
+    width: 50%;
+    height: 100%;
+}
+
+.c-event-past-game-time {
+    width: 10%;
+}
+
+.c-event-past-game-category-teams {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.c-event-past-game-category-team {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &-info {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+
+        & img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &-score {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: var(--black);
+        gap: 10px;
+    }
+}
+
+.c-event-standings {
+    width: var(--max-block-width);
+    display: flex;
+    flex-direction: column;
+}
+
+.c-event-offer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 10%;
+    box-sizing: border-box;
+}
+
+.c-event-offer-content {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.c-event-ships-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.c-event-ships {
+    width: var(--max-block-width);
+    display: flex;
+    // justify-content: center;
+    flex-wrap: wrap;
+}
+
+.c-event-ship {
+    position: relative;
+    width: 19%;
+    height: 158px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+
+    & p {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+
+    & img {
+        max-width: 70%;
+        max-height: 60%;
+        cursor: pointer;
+    }
+}
+
+.c-event-disclaimer {
+    width: var(--max-block-width);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.c-event-description {
+    width: var(--max-block-width);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 1100px) {
+    .c-event-past-matches,
+    .c-event-standings,
+    .c-event-ships-wrapper,
+    .c-event-disclaimer,
+    .c-event-description {
+        width: 90%;
+    }
+
+    .c-event-past-game-category-teams {
+        gap: 0;
+    }
+
+    .c-event-past-game {
+        height: 200px;
+    }
+
+    .c-event-ship {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .c-event-past-game {
+        flex-direction: column;
+    }
+
+    .c-event-content,
+    .c-event-past-game-category-teams,
+    .c-event-past-game-category,
+    .c-event-offer-content {
+        width: 100%;
+    }
+}

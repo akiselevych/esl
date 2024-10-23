@@ -1,0 +1,100 @@
+.event-card {
+    width: 346px;
+    height: 573px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+}
+
+.event-card-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.event-card-game {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.event-card-between {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0 0 0;
+    box-sizing: border-box;
+}
+
+.event-avatar {
+    width: 105px;
+    height: 105px;
+    border-radius: 105px;
+    border: 1px solid var(--price-color);
+}
+
+.event-card-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #FFEB09;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.event-card-time {
+    width: 100%;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--additional-border-color);
+}
+
+.event-card-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.event-card-tags {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.event-card-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.event-card-link {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}

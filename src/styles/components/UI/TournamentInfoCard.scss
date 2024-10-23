@@ -1,0 +1,52 @@
+.tournament-content {
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    border-radius: 6px;
+}
+    
+.tournament-name-cell {
+    display: flex;
+    align-items: center;
+}
+
+.tournament-name {
+    max-width: 161px;
+    overflow-wrap: break-word;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.tournament-status {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+    
+.tournament-icon {
+    margin-right: 10px;
+    width: 152px;
+    height: 86px;
+    border-radius: 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.tournament-access-icon {
+    color: var(--connected);
+    display: inline-block;
+
+    &.locked {
+        color: var(--not-connected);
+    }
+}
+
+@media (max-width: 1090px) {
+    .tournament-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

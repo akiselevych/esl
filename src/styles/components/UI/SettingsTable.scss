@@ -1,0 +1,37 @@
+.settings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    & th {
+        display: flex;
+        text-align: left;
+        color: #63708a;
+        gap: 10px;
+        font-weight: 400;
+        box-sizing: border-box;
+    }
+
+    & th, td {
+        align-items: center;
+        padding: 10px;
+    }
+
+    & tr {
+        background-color: var(--white);
+
+        &:nth-child(even) {
+            background-color: var(--active-option);
+        }
+    }
+
+    & .setting-value {
+        width: 50%;
+        font-weight: 600;
+    }
+
+    & .setting-icon {
+        width: 24px;
+        max-height: 24px;
+    }
+}

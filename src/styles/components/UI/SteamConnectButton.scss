@@ -1,0 +1,21 @@
+.steam-connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 167px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background-color: var(--not-connected);
+    border: none;
+    gap: 5px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+
+    &.connected {
+        background-color: var(--connected);
+    }
+}

@@ -1,0 +1,23 @@
+.detailed-tournament-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 450px 0 50px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.detailed-tournament-inner {
+    width: var(--max-block-width);
+    display: flex;
+    align-items: flex-end;
+}
+
+@media (max-width: 1199px) {
+    .detailed-tournament-inner {
+        width: 90%;
+    }
+}

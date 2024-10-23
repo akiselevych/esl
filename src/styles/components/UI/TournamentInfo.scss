@@ -1,0 +1,23 @@
+.tournament-table {
+  width: 100%;
+}
+
+.tournament-table th,
+.tournament-table td {
+  text-align: left;
+  padding: 10px;
+  font-weight: normal;
+}
+
+@media (max-width: 1090px) {
+  .tournament-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .tournament-table thead {
+    display: none;
+  }
+}

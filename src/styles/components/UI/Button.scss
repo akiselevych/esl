@@ -1,0 +1,23 @@
+.button {
+    width: 114px;
+    height: 45px;
+    font-size: 15px;
+    background-color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    color: var(--black);
+    transition: 0.3s;
+
+    &:hover {
+        background-color: var(--button-color-hover);
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+    .button {
+        width: auto;
+        height: 35px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,12 @@
+.wwo-offer {
+    display: flex;
+    flex-direction: column;
+
+    & .desc {
+        max-width: 318px;
+    }
+}
+
+.wwo-logo {
+    color: var(--green);
+}

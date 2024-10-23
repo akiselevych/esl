@@ -1,0 +1,98 @@
+.c-event-bracket {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.c-event-round {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 20px;
+
+    &.semifinals {
+        gap: 200px;
+    }
+
+    &.finals {
+        gap: 347px;
+    }
+}
+
+.c-event-matches-duos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.c-event-match {
+    width: 268px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.c-event-matchup {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    box-sizing: border-box;
+
+    &.winner {
+        background-color: var(--third-color);
+    }
+}
+
+.c-event-team {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    gap: 10px;
+
+    & img {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.c-event-score {
+    float: right;
+    font-weight: bold;
+    text-align: end;
+    width: 30%;
+}
+
+.c-event-c-svg {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    color: var(--border-color)
+}
+
+@media (max-width: 1100px) {
+    .c-event-bracket {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+}

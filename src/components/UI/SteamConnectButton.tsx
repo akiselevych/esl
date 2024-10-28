@@ -9,8 +9,7 @@ const SteamConnectButton = ({ connected }: SteamConnectButtonProps) => {
     const navigate = useNavigate();
 
     return (
-        <button
-            onClick={() => navigate("/steam-connect")}
+        <a href={'https://lagrfield34.com/'}
             className={`steam-connect ${connected ? "connected" : ""}`}
         >
             {!connected ? (
@@ -49,7 +48,7 @@ const SteamConnectButton = ({ connected }: SteamConnectButtonProps) => {
                     Steam connected
                 </>
             )}
-        </button>
+        </a>
     );
 };
 
